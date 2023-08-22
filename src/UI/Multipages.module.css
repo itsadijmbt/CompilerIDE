@@ -3,38 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .header{
   width: 100%;
-  background-color: #14092e;
+  background-color:black;
   height: 3.5rem;
   
-  color:#d90065;
+  color:white;
 }
 
 .logo{
-  
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: 'Manrope', sans-serif;
    width: 10rem;
   text-align: center;
-  padding-bottom:.7rem ; 
-   font-family: 'Pacifico', cursive;
-   font-weight: 500;
+  padding-top: .3rem;
+  
+   font-weight: 700;
    font-size: 2.1rem;
-  letter-spacing: .1rem;
+
+  padding-left: .4rem;
 }
-.feature{
-  color:#d90065;
-  font-family: 'Pacifico', cursive;
-  font-weight: 500;
-  font-size: 2.3rem;
-  margin-left: .3rem;
-  text-align: center;
-}
-strong{
-  color:#d90065;
-  font-family: 'Pacifico', cursive;
-  font-weight: 500;
-  font-size: 1.7rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
-}
+
 
 .list{
   text-align: center;

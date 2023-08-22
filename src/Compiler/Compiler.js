@@ -1,7 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { CodeActions } from "../Store/Store";
-
 export default function Compiler() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.CodeSlice.code);
@@ -9,7 +8,7 @@ export default function Compiler() {
   console.log("code in api mains..\n", data);
 
   async function executeRemoteCode() {
-    const url = "https://online-code-compiler.p.rapidapi.com/v1/";
+    const url = "https://online-code-compiler.p.rapidapi.com/v1";
     const options = {
       method: "POST",
       headers: {

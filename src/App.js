@@ -1,18 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
-import CodeContainer from './Components/CodeContainer';
-import Compiler from './Compiler/Compiler';
-import Multipages from './Components/Multipages';
-import User from './Components/User';
-function App() {
-  return (
- <>
 
- <Multipages></Multipages>
- <CodeContainer></CodeContainer>
- <Compiler></Compiler>
- <User></User>
- </>
+import { RouterProvider,createBrowserRouter } from "react-router-dom";
+import SharePage from './Components/SharePage';
+import MainHolder from './Compiler/MainHolder';
+function App() {
+
+
+
+    const router =createBrowserRouter([
+    
+      {
+         path:'/',
+         element:<MainHolder></MainHolder>,
+        
+      },
+      {
+        path:'/screenshot',
+   element:<SharePage></SharePage>
+      }
+     
+
+    ])
+
+  return (
+ <RouterProvider router={router}>
+
+ 
+
+ </RouterProvider>
   );
 }
 
